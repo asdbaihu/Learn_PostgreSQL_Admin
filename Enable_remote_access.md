@@ -18,3 +18,5 @@ host        all                   all              0.0.0.0/0              md5
 Nghĩa là chấp nhận kết nối đến mọi database đối với mọi user có md5 encrypted password hợp lệ
 
 3. Restart Postgres server
+
+### Trong file pg_hba.conf, mỗi rule được viết thành 1 dòng. Thứ tự check rule là từ trên xuống dưới
