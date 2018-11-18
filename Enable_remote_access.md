@@ -9,7 +9,7 @@ listen_address = '*'
 ```
 Dòng này có nghĩa chấp nhận kết nối từ mọi địa chỉ IP
 
-1. Chỉnh sửa file pg_hba.conf
+2. Chỉnh sửa file pg_hba.conf
 Thêm dòng sau vào dòng đầu tiên trong file:
 ```
 # TYPE   DATABASE   USER        CIDR-ADDRESS   METHOD
@@ -17,4 +17,4 @@ host        all                   all              0.0.0.0/0              md5
 ```
 Nghĩa là chấp nhận kết nối đến mọi database đối với mọi user có md5 encrypted password hợp lệ
 
-1. Restart Postgres server
+3. Restart Postgres server
